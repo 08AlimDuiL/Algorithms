@@ -10,6 +10,7 @@ public class SumArray {
             differentInteger[i] = Math.abs(differentInteger[i]);
             sum = sum + differentInteger[i];
         }
+
         return sum;
     }
 }
