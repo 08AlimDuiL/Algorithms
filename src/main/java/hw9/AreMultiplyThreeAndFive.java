@@ -1,4 +1,3 @@
-//----------------------------------Task №7---------------------------------
 //Given an integer M perform the following conditional actions:
 //If M is multiple of 3 and 5 then return "Good Number".
 //If M is only multiple of 3 and not of 5 then return "Bad Number"
@@ -8,13 +7,13 @@ package hw9;
 
 public class AreMultiplyThreeAndFive {
 
-    public String AreMultiplyThreeAndFive (int M){
+    public String AreMultiplyThreeAndFive (int m){
         String IsPositiveNumber;
-        if( M % 3 == 0 && M % 5 == 0){
+        if( m % 3 == 0 && m % 5 == 0){
             IsPositiveNumber = "Good Number";
-        } else if (M % 3 == 0 && M % 5 != 0 ){
+        } else if (m % 3 == 0 && m % 5 != 0 ){
             IsPositiveNumber = "Bad Number";
-        } else if (M % 3 != 0 && M % 5 == 0 ){
+        } else if (m % 3 != 0 && m % 5 == 0 ){
             IsPositiveNumber = "Poor Number";
         } else {
             IsPositiveNumber = "-1";
