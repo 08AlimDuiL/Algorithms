@@ -8,11 +8,11 @@ public class OddIndicesTest {
     @Test
     public void testOddIndicesHappyPathArrayOfOddIndexes() {
         int[] differentInt = new int[]{-45, 590, 234, 985, 12, 68};
-        int[] expectedResult = {590, 985, 68};// Arrange
+        int[] expectedResult = {590, 985, 68};
 
         OddIndices OddIndicesObject = new OddIndices();
-        int[] actualResult = OddIndicesObject.OddIndices(differentInt);// Act
+        int[] actualResult = OddIndicesObject.OddIndices(differentInt);
 
-        Assertions.assertArrayEquals(expectedResult, actualResult);//Assert
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 }

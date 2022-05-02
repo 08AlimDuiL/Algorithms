@@ -7,9 +7,8 @@ import org.junit.jupiter.api.*;
 
 public class SumArrayTest {
 
-    //@RepeatedTest(5)
+    @RepeatedTest(5)
     @Order(1)
-    @Test
     public void testOneSumArrayHappyPathSumOfAllNumbers() {
         int[] differentInteger = new int[]{0, 1, 2, 3, 4, 5};
         int expectedResult = 15;
@@ -30,7 +29,4 @@ public class SumArrayTest {
 
         Assertions.assertEquals(expectedResult, actualResult);
     }
-
-
-
 }

@@ -8,16 +8,15 @@ package hw9;
 public class AreMultiplyThreeAndFive {
 
     public String AreMultiplyThreeAndFive (int m){
-        String IsPositiveNumber;
+
         if( m % 3 == 0 && m % 5 == 0){
-            IsPositiveNumber = "Good Number";
+            return "Good Number";
         } else if (m % 3 == 0 && m % 5 != 0 ){
-            IsPositiveNumber = "Bad Number";
+            return "Bad Number";
         } else if (m % 3 != 0 && m % 5 == 0 ){
-            IsPositiveNumber = "Poor Number";
+            return "Poor Number";
         } else {
-            IsPositiveNumber = "-1";
+            return  "-1";
         }
-        return IsPositiveNumber;
     }
 }

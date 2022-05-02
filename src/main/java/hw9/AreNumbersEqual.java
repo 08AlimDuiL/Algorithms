@@ -9,15 +9,13 @@ package hw9;
 public class AreNumbersEqual {
 
     public int AreNumbersEqual (int one, int two){
-        int AreNumbersEqual;
         //int AreNumbersEqual = Integer.compare(one, two); Как лучше?
         if(one == two){
-            AreNumbersEqual = 0;
+            return 0;
         } else if (one < two){
-            AreNumbersEqual = -1;
+            return -1;
         } else {
-            AreNumbersEqual = 1;
+            return 1;
         }
-        return AreNumbersEqual;
     }
 }

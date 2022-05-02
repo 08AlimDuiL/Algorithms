@@ -1,4 +1,3 @@
-//----------------------------------Task №8---------------------------------
 //Написать алгоритм MinMaxAve, который принимает массив чисел int[]  и 2
 // значения индексов. Алгоритм возвращает массив, который содержит минимальное
 // значение, максимальное значение,  и среднее среди всех значений между 2-мя
@@ -17,7 +16,7 @@ public class MinMaxAve {
                 average = average + array[i];
             }
         }
-        average = (int)average / (indexB - indexA + 1);
+        average = (average / (indexB - indexA + 1));
         MinMaxAverage = new int[]{array[indexA], array[indexB], average};
         return MinMaxAverage;
     }

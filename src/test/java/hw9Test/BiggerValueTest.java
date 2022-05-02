@@ -7,9 +7,8 @@ import org.junit.jupiter.api.*;
 
 public class BiggerValueTest {
 
-   // @RepeatedTest(2)
+    @RepeatedTest(2)
     @Order(1)
-    @Test
     public void testBiggerValueHappyPathBigger(){
         int a = 3333;
         int b = 9999;
@@ -78,7 +77,7 @@ public class BiggerValueTest {
     public void testBiggerValueNegativeEqualNumbers(){
         int a = 3333;
         int b = 3333;
-        int expectedResult = 3333;
+        int expectedResult = 0;
 
         BiggerValue BiggerValueObject = new BiggerValue();
         int actualResult = BiggerValueObject.BiggerValue(a, b);

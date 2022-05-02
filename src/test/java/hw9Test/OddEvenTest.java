@@ -9,62 +9,61 @@ public class OddEvenTest {
 
     @RepeatedTest(5)
     @Order(1)
-    @Test
     public void testOddEvenHappyPathOdd() {
-        int a = -345;
-        String expectedResult = "Odd";// Arrange
+        long a = -345;
+        String expectedResult = "Odd";
 
         OddEven oddEvenObject = new OddEven();
-        String actualResult = oddEvenObject.OddEven(a);// Act
+        String actualResult = oddEvenObject.OddEven(a);
 
-        Assertions.assertEquals(expectedResult, actualResult);//Assert
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
     @Order(2)
     @Test
     public void testOddEvenHappyPathEvenZero() {
-        int a = 0;
-        String expectedResult = "Even";// Arrange
+        long a = 0;
+        String expectedResult = "Even";
 
         OddEven oddEvenObject = new OddEven();
-        String actualResult = oddEvenObject.OddEven(a);// Act
+        String actualResult = oddEvenObject.OddEven(a);
 
-        Assertions.assertEquals(expectedResult, actualResult);//Assert
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
     @Order(3)
     @Test
     public void testOddEvenHappyPathEven() {
-        int a = 222222;
-        String expectedResult = "Even";// Arrange
+        long a = 222222;
+        String expectedResult = "Even";
 
         OddEven oddEvenObject = new OddEven();
-        String actualResult = oddEvenObject.OddEven(a);// Act
+        String actualResult = oddEvenObject.OddEven(a);
 
-        Assertions.assertEquals(expectedResult, actualResult);//Assert
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
     @Order(4)
     @Test
     public void testOddEvenHappyPathEvenMax() {
-        int a = Integer.MAX_VALUE + 1;
-        String expectedResult = "Undefined";// Arrange
+        long a = Integer.MAX_VALUE + 1;
+        String expectedResult = "Undefined";
 
         OddEven oddEvenObject = new OddEven();
-        String actualResult = oddEvenObject.OddEven(a);// Act
+        String actualResult = oddEvenObject.OddEven(a);
 
-        Assertions.assertEquals(expectedResult, actualResult);//Assert
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testOddEvenHappyPathEvenMin() {
-        int a = Integer.MIN_VALUE - 1;
-        String expectedResult = "Undefined";// Arrange
+        long a = Integer.MIN_VALUE - 1;
+        String expectedResult = "Undefined";
 
         OddEven oddEvenObject = new OddEven();
-        String actualResult = oddEvenObject.OddEven(a);// Act
+        String actualResult = oddEvenObject.OddEven(a);
 
-        Assertions.assertEquals(expectedResult, actualResult);//Assert
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
 

@@ -5,12 +5,9 @@ package hw9;
 public class BiggerValue {
 
     public int BiggerValue (int a, int b){
-        int BiggerValue;
-        if( a > b){
-            BiggerValue = a;
-        } else {
-            BiggerValue = b;
+        if( a != b) {
+            return Math.max(a, b);
         }
-        return BiggerValue;
+        return 0;
     }
 }

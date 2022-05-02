@@ -7,9 +7,8 @@ import org.junit.jupiter.api.*;
 
 public class IsPositiveNumberTest {
 
-    //@RepeatedTest(5)
+    @RepeatedTest(5)
     @Order(1)
-    @Test
     public void testPositiveNumberHappyPath(){
         int a = 555;
         boolean expectedResult = true;
@@ -17,7 +16,7 @@ public class IsPositiveNumberTest {
         IsPositiveNumber PositiveNumberObject = new IsPositiveNumber();
         boolean actualResult = PositiveNumberObject.IsPositiveNumber(a);
 
-        Assertions.assertTrue(true);
+        Assertions.assertTrue(expectedResult, String.valueOf(actualResult));
     }
 
     @Order(2)
@@ -29,7 +28,7 @@ public class IsPositiveNumberTest {
         IsPositiveNumber PositiveNumberObject = new IsPositiveNumber();
         boolean actualResult = PositiveNumberObject.IsPositiveNumber(a);
 
-        Assertions.assertTrue(true);
+        Assertions.assertTrue(expectedResult, String.valueOf(actualResult));
     }
 
     @Order(3)
@@ -41,6 +40,6 @@ public class IsPositiveNumberTest {
         IsPositiveNumber PositiveNumberObject = new IsPositiveNumber();
         boolean actualResult = PositiveNumberObject.IsPositiveNumber(a);
 
-        Assertions.assertTrue(false);
+        Assertions.assertFalse(expectedResult, String.valueOf(actualResult));
     }
 }

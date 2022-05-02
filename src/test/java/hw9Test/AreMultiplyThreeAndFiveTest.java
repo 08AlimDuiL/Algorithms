@@ -7,9 +7,8 @@ import org.junit.jupiter.api.*;
 
 public class AreMultiplyThreeAndFiveTest {
 
-    //@RepeatedTest(5)
+    @RepeatedTest(5)
     @Order(1)
-    @Test
     public void testAreMultiplyThreeAndFiveHappyPath (){
         int m = 225;
         String expectedResult = "Good Number";
