@@ -4,11 +4,10 @@ public class StringToNumbersAndSpaces {
 
     public String StringToNumbersAndSpaces(String ExcNumbAndSpaces) {
         if (ExcNumbAndSpaces.length() != 0) {
-            ExcNumbAndSpaces = ExcNumbAndSpaces.trim();
             int count = 0;
             for (int i = 0; i < ExcNumbAndSpaces.length(); i++) {
                 char one = ExcNumbAndSpaces.charAt(i);
-                if (one >= '1' && one <= '9' || one == ' ') {
+                if (one >= '0' && one <= '9' || one == ' ') {
                     count++;
                 }
             }
@@ -16,7 +15,7 @@ public class StringToNumbersAndSpaces {
             count = 0;
             for (int i = 0; i < ExcNumbAndSpaces.length(); i++) {
                 char one = ExcNumbAndSpaces.charAt(i);
-                if (one >= '1' && one <= '9' || one == ' ') {
+                if (one >= '0' && one <= '9' || one == ' ') {
                     except[count++] = String.valueOf(one);
                 }
             }

@@ -8,7 +8,7 @@ public class StringToNumber {
             int count = 0;
             for (int i = 0; i < delAllExcNumbers.length(); i++) {
                 char one = delAllExcNumbers.charAt(i);
-                if (one >= '1' && one <= '9') {
+                if (one >= '0' && one <= '9') {
                     count++;
                 }
             }
@@ -16,7 +16,7 @@ public class StringToNumber {
             count = 0;
             for (int i = 0; i < delAllExcNumbers.length(); i++) {
                 char one = delAllExcNumbers.charAt(i);
-                if (one >= '1' && one <= '9') {
+                if (one >= '0' && one <= '9') {
                     except[count++] = String.valueOf(one);
                 }
             }

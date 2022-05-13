@@ -2,30 +2,30 @@ package hw10;
 
 public class StringToLetters {
 
-    public String StringToLetters(String deleteAllExceptForLetters) {
-        if (deleteAllExceptForLetters.length() != 0) {
-            deleteAllExceptForLetters = deleteAllExceptForLetters.trim();
+    public String StringToLetters(String delAllExcTheLetters) {
+        if (delAllExcTheLetters.length() != 0) {
+            delAllExcTheLetters = delAllExcTheLetters.trim();
             int count = 0;
-            for (int i = 0; i < deleteAllExceptForLetters.length(); i++) {
-                char one = deleteAllExceptForLetters.charAt(i);
+            for (int i = 0; i < delAllExcTheLetters.length(); i++) {
+                char one = delAllExcTheLetters.charAt(i);
                 if ((one >= 'a' && one <= 'z') || (one >= 'A' && one <= 'Z')) {
                     count++;
                 }
             }
             String[] except = new String[count];
             count = 0;
-            for (int i = 0; i < deleteAllExceptForLetters.length(); i++) {
-                char one = deleteAllExceptForLetters.charAt(i);
+            for (int i = 0; i < delAllExcTheLetters.length(); i++) {
+                char one = delAllExcTheLetters.charAt(i);
                 if ((one >= 'a' && one <= 'z') || (one >= 'A' && one <= 'Z')) {
                     except[count++] = String.valueOf(one);
                 }
             }
-            deleteAllExceptForLetters = "";
+            delAllExcTheLetters = "";
             for (int i = 0; i < except.length; i++) {
-                deleteAllExceptForLetters = deleteAllExceptForLetters.concat(except[i]);
+                delAllExcTheLetters = delAllExcTheLetters.concat(except[i]);
             }
 
-            return deleteAllExceptForLetters;
+            return delAllExcTheLetters;
         }
 
         return null;
