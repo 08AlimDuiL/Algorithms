@@ -2,18 +2,17 @@ package hw10;
 
 public class RemoveDuplicates {
 
-    public String RemoveDuplicates(String uniqueLetter) {
+    public String RemoveDuplicates(String uniqueLetters) {
 
-        if (uniqueLetter.length() != 0) {
-            uniqueLetter = uniqueLetter.trim().toLowerCase();
-            String unique = "";
-            for (int i = 0; i < uniqueLetter.length(); i++) {
-                if (uniqueLetter.charAt(i) > 'z' || uniqueLetter.charAt(i) < 'a') {
-                    uniqueLetter = uniqueLetter.replace((uniqueLetter.charAt(i)), ' ');
+        if (uniqueLetters.length() != 0) {
+            uniqueLetters = uniqueLetters.trim().toLowerCase();
+            for (int i = 0; i < uniqueLetters.length(); i++) {
+                if (uniqueLetters.charAt(i) > 'z' || uniqueLetters.charAt(i) < 'a') {
+                    uniqueLetters = uniqueLetters.replace((uniqueLetters.charAt(i)), ' ');
                 }
             }
-            uniqueLetter = uniqueLetter.replace(" ", "");
-            String[] duplicate = uniqueLetter.split("");
+            uniqueLetters = uniqueLetters.replace(" ", "");
+            String[] duplicate = uniqueLetters.split("");
             int count = 0;
             for (int i = 0; i < duplicate.length; i++) {
                 for (int j = i + 1; j < duplicate.length; j++) {
@@ -29,16 +28,16 @@ public class RemoveDuplicates {
             }
             String[] noDuplicate = new String[duplicate.length - count];
             count = 0;
-            uniqueLetter = "";
+            uniqueLetters = "";
 
             for (int i = 0; i < duplicate.length; i++) {
                 if (duplicate[i] != ("A")) {
 
-                    uniqueLetter = uniqueLetter.concat(noDuplicate[count++] = duplicate[i]);
+                    uniqueLetters = uniqueLetters.concat(noDuplicate[count++] = duplicate[i]);
                 }
             }
 
-            return uniqueLetter;
+            return uniqueLetters;
         }
 
         return null;

@@ -9,7 +9,7 @@ public class StringToNumberTest {
 
     @RepeatedTest(5)
     @Order(1)
-    public void StringToNumberTestHappyPath() {
+    public void StringToNumberHappyPath() {
 
         String delAllExcNumbers = "   Abr  acadabra0123456789 -+*/";
         String expectedResult = "0123456789";

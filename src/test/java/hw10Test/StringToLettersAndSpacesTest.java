@@ -2,6 +2,7 @@ package hw10Test;
 
 import hw10.StringToLettersAndSpaces;
 import org.junit.jupiter.api.*;
+
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 public class StringToLettersAndSpacesTest {

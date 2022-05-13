@@ -9,7 +9,7 @@ public class StringToNumbersTest {
 
     @RepeatedTest(2)
     @Order(1)
-    public void testStringToNumbersTestHappyPath() {
+    public void testStringToNumbersHappyPath() {
 
         String str = "1, 2, 3, 4, 5";
         String[] expectedResult = new String[]{"1", "2", "3", "4", "5"};
@@ -19,9 +19,10 @@ public class StringToNumbersTest {
 
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }
+
     @Test()
     @Order(2)
-    public void testStringToNumbersTestWithSpacesHappyPath() {
+    public void testStringToNumbersWithSpacesHappyPath() {
 
         String str = "1,   2, 3  , 4,   5   ";
         String[] expectedResult = new String[]{"1", "2", "3", "4", "5"};
@@ -34,7 +35,7 @@ public class StringToNumbersTest {
 
     @Test()
     @Order(3)
-    public void testStringToNumbersTestWithDifferentSimbolsHappyPath() {
+    public void testStringToNumbersWithDifferentSimbolsHappyPath() {
 
         String str = "  9/2;   2.05; aMbc3; 9++9; -5  99   ";
         String[] expectedResult = new String[]{"9", "2", "2", "05", "3", "9", "9", "5", "99"};
@@ -44,7 +45,6 @@ public class StringToNumbersTest {
 
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }
-
 }
 
 
