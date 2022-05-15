@@ -19,6 +19,6 @@ public class StartsWithLetter {
             return allWordStartWithL;
         }
 
-        return null;
+        return "";
     }
 }

@@ -28,6 +28,6 @@ public class StringToNumber {
             return delAllExcNumbers;
         }
 
-        return null;
+        return "";
     }
 }

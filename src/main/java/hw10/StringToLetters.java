@@ -28,7 +28,7 @@ public class StringToLetters {
             return delAllExcTheLetters;
         }
 
-        return null;
+        return "";
     }
 
 

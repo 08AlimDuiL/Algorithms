@@ -40,6 +40,6 @@ public class RemoveDuplicates {
             return uniqueLetters;
         }
 
-        return null;
+        return "";
     }
 }

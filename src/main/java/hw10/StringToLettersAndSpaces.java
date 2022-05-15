@@ -27,6 +27,6 @@ public class StringToLettersAndSpaces {
             return delAllExcLettsAndSpaces;
         }
 
-        return null;
+        return "";
     }
 }

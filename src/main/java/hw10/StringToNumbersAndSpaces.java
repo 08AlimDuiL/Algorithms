@@ -27,6 +27,6 @@ public class StringToNumbersAndSpaces {
             return ExcNumbAndSpaces;
         }
 
-        return null;
+        return "";
     }
 }

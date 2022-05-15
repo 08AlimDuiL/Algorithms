@@ -14,6 +14,6 @@ public class ReverseString {
             return reverseString;
         }
 
-        return null;
+        return "";
     }
 }

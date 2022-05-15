@@ -29,6 +29,6 @@ public class StringIntersection {
             return total;
         }
 
-        return null;
+        return "";
     }
 }
